@@ -1,0 +1,60 @@
+.main-sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #343a40;
+    color: white;
+    position: fixed;
+    transition: width 0.3s ease;
+}
+
+.main-sidebar.collapsed {
+    width: 60px;
+}
+
+.main-sidebar .menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.main-sidebar .sidebar {
+    padding-top: 20px;
+}
+
+.nav-sidebar .nav-item {
+    margin: 5px 0;
+}
+
+.nav-sidebar .nav-link {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    gap: 15px;
+}
+
+.nav-sidebar .nav-link:hover {
+    background: #0056b3; /* Darker shade of blue */
+    color: white;
+}
+
+.nav-sidebar .nav-icon {
+    flex-shrink: 0;  /* Prevents icon from shrinking */
+    font-size: 18px; /* Adjust size for better visibility */
+}
+
+.main-sidebar.collapsed .nav-link p {
+    display: none;
+}
+
+.nav-sidebar .nav-link p {
+    margin: 5px;  /* Remove unwanted spacing */
+    padding: 0;
+    font-size: 16px;
+    white-space: nowrap; /* Prevents text wrapping */
+}

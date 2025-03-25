@@ -1,0 +1,40 @@
+/* Ratings & Reviews Section */
+.ratings-reviews {
+    padding: 20px;
+  }
+  
+  /* Charts */
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .card-header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .card-body canvas {
+    max-width: 100%;
+  }
+  
+  /* Reviews Table */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,78 @@
+.dashboard-container {
+    padding: 20px;
+  }
+  
+  .info-boxes {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .info-box {
+    flex: 1;
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .bg-info { background-color: #17a2b8; }
+  .bg-success { background-color: #28a745; }
+  .bg-warning { background-color: #ffc107; }
+  .bg-danger { background-color: #dc3545; }
+  
+  .chart-container {
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .reviews-section {
+    max-height: 250px;
+    overflow-y: auto;
+  }
+  
+  .review-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .review-item:last-child {
+    border-bottom: none;
+  }
+
+ 
+  
+  .service-quality ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .service-quality li {
+    font-size: 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .service-quality li:last-child {
+    border-bottom: none;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+  }
+  

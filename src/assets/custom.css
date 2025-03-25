@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+  }
+  
+  .layout {
+    display: flex;
+  }
+  
+  .main-content {
+    margin-left: 220px;
+    flex: 1;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  /* Dark mode general styles */
+.dark-mode {
+  background-color: #1e293b;
+  color: white;
+}
+
+/* Dark mode for sidebar */
+.dark-mode .sidebar {
+  background: #0f172a;
+}
+
+/* Dark mode for navbar */
+.dark-mode .navbar {
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+}
+
+/* Adjust menu items for dark mode */
+.dark-mode .menu a {
+  color: white;
+}
+
+.dark-mode .menu a:hover,
+.dark-mode .menu a.active {
+  color: #38bdf8;
+}
+
+/* Dark mode for toggle button */
+.dark-mode .menu-toggle {
+  color: white;
+}
+
+/* Dark mode for profile section */
+.dark-mode .profile {
+  color: white;
+}
