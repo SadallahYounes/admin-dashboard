@@ -2,17 +2,17 @@ import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
-import "../components/sidebar.css"; // Sidebar styles
-import "../components/navbar.css"; // Navbar styles
+import "../styles/sidebar.css"; 
+import "../styles/navbar.css"; 
 
 const Layout = () => {
-  const [isSidebarOpen, setSidebarOpen] = useState<boolean>(true);
+  const [isCollapsed, setIsCollapsed] = useState(false);
 
   return (
-    <div className={`layout ${isSidebarOpen ? "" : "collapsed"}`}>
-      <Sidebar isSidebarOpen={isSidebarOpen} setSidebarOpen={setSidebarOpen} />
+    <div className={`layout ${isCollapsed ? "collapsed" : ""}`}>
+      <Sidebar isCollapsed={isCollapsed} setIsCollapsed={setIsCollapsed} />
       <div className="main-content">
-        <Navbar setSidebarOpen={setSidebarOpen} />
+        <Navbar setIsCollapsed={setIsCollapsed} />
         <div className="content">
           <Outlet />
         </div>

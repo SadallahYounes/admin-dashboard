@@ -1,0 +1,20 @@
+.modal-content h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.conditions-table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+.conditions-table th, .conditions-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.conditions-table th {
+    background: #007bff;
+    color: white;
+}

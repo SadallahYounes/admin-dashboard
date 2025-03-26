@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";  
-import "./ActiveOrders.css";
+import "../styles/ActiveOrders.css";
 
 // Define order type
 interface Order {

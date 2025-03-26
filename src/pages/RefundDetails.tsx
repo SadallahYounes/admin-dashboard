@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import "./refundDetails.css";
+import "../styles/refundDetails.css";
 import "./Sales.tsx";
 interface RefundDetails {
   orderId: string;

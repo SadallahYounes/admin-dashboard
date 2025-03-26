@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import "./ActiveOrderDetails.css";
+import "../styles/ActiveOrderDetails.css";
 
 // Define order type
 interface Order {

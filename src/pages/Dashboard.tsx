@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Chart from "chart.js/auto";
-
+import "../styles/dashboard.css";
 // Function to create a chart
 const createChart = (chartId: string, label: string, data: number[], backgroundColor: string) => {
   const ctx = document.getElementById(chartId) as HTMLCanvasElement;

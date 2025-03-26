@@ -1,5 +1,5 @@
 import React from "react";
-import "./sales.css";
+import "../styles/sales.css";
 import {useEffect, useState } from "react";
 import "./RefundDetails.tsx";
 import { Link } from "react-router-dom";

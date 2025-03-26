@@ -6,13 +6,17 @@ import Sales from "./pages/Sales";
 import RefundDetails from "./pages/RefundDetails";
 import ActiveOrders from "./pages/ActiveOrders";
 import ActiveOrderDetails from "./pages/ActiveOrderDetails";
+import Invoices from "./pages/Invoices";
 import Orders from "./pages/Orders";
+import Promotions from "./pages/Promotions";
 import "./assets/custom.css";  
-import "./pages/dashboard.css";
-import "./pages/ratingsreviews.css";
-import "./pages/sales.css";
-import "./pages/refundDetails.css";
-import "./pages/ActiveOrderDetails.css"
+import "./styles/dashboard.css";
+import "./styles/ratingsreviews.css";
+import "./styles/sales.css";
+import "./styles/refundDetails.css";
+import "./styles/ActiveOrderDetails.css"
+
+import Users from "./pages/Users";
 const App = () => {
   return (
     <Router>
@@ -24,6 +28,9 @@ const App = () => {
           <Route path="/refunds/:orderId" element={<RefundDetails />} />
           <Route path="/active-orders" element={<ActiveOrders />} />
           <Route path="/active-orders/:orderId" element={<ActiveOrderDetails />} />
+          <Route path="/users" element={<Users />} /> 
+          <Route path="/invoices" element={<Invoices />} />
+          <Route path="/promotions" element={<Promotions />} />
           <Route path="/orders" element={<Orders />} />
         </Route>
       </Routes>

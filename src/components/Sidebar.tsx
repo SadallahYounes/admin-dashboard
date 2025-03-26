@@ -1,11 +1,15 @@
-import { useState } from "react";
+
 import { Link } from "react-router-dom";
 import { FaTachometerAlt, FaStar, FaShoppingCart, FaClipboardList, FaUsers, FaFileInvoice, FaTags, FaBars } from "react-icons/fa";
-import "./sidebar.css";
+import "../styles/sidebar.css";
 
-const Sidebar = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+// Define props interface
+interface SidebarProps {
+  isCollapsed: boolean;
+  setIsCollapsed: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
+const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, setIsCollapsed }) => {
   return (
     <aside className={`main-sidebar sidebar-dark-primary elevation-4 ${isCollapsed ? "collapsed" : ""}`}>
       {/* Sidebar Toggle Button */}

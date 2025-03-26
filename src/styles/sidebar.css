@@ -1,7 +1,7 @@
 .main-sidebar {
     width: 220px;
     height: 100vh;
-    background: #343a40;
+    background: #2d3238;
     color: white;
     position: fixed;
     transition: width 0.3s ease;
@@ -29,23 +29,31 @@
 }
 
 .nav-sidebar .nav-link {
-    color: white;
+    color: #f1f1f1;
     display: flex;
     align-items: center;
     padding: 10px;
     border-radius: 5px;
     transition: 0.3s;
     gap: 15px;
+    font-weight: 500;
 }
 
 .nav-sidebar .nav-link:hover {
-    background: #0056b3; /* Darker shade of blue */
+    background: #007bff;  
     color: white;
 }
 
+.nav-sidebar .nav-link.active {
+    background: #0056b3;  
+    color: #ffffff;
+    font-weight: 600;
+}
+
 .nav-sidebar .nav-icon {
-    flex-shrink: 0;  /* Prevents icon from shrinking */
-    font-size: 18px; /* Adjust size for better visibility */
+    flex-shrink: 0;  
+    font-size: 20px;/* Prevents icon from shrinking */
+    color: #ffffff;
 }
 
 .main-sidebar.collapsed .nav-link p {
@@ -57,4 +65,5 @@
     padding: 0;
     font-size: 16px;
     white-space: nowrap; /* Prevents text wrapping */
+    color: #ffffff;
 }

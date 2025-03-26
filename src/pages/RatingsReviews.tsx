@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Bar, Line } from "react-chartjs-2";
-import "./ratingsreviews.css";
+import "../styles/ratingsreviews.css";
 import "chart.js/auto"; 
 
 const RatingsReviews = () => {
